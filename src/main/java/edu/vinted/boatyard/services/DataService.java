@@ -23,7 +23,6 @@ public class DataService {
 	 * @throws IOException if there is a problem while reading data file
 	 */
 	public static City populateMap(String cityName, String dataFilePath) throws FileNotFoundException, IOException {
-		dataFilePath = "C:\\venice.txt";
 		String input = loadMapFromFile(dataFilePath);
 		if (!isValid(input)) {
 			throw new IllegalArgumentException("Invalid params in data file");
