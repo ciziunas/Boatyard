@@ -25,7 +25,7 @@ public class DataService {
 	public static City populateMap(String cityName, String dataFilePath) throws FileNotFoundException, IOException {
 		String input = loadMapFromFile(dataFilePath);
 		if (!isValid(input)) {
-			throw new IllegalArgumentException("Invalid params in data file");
+			throw new IllegalArgumentException("Invalid data in input file");
 		}
 		City city = new City(cityName);
 	    String tokens[] = input.split(DATA_TOKEN);

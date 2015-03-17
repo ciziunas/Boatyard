@@ -11,7 +11,7 @@ public class City {
 		this.name = name;
 	}
 
-	public boolean isSuburbInTheMap(Suburb suburb) {
+	public boolean contains(Suburb suburb) {
 		return suburbs.get(suburb) != null;
 	}
 	
